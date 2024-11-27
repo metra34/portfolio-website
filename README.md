@@ -22,6 +22,9 @@
 
 - provide a form to email me
 
+### NOTE:
+--turbo does not work with sentry, add it back after verifying it works
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
