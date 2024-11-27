@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import IconButton from "../buttons/IconButton";
+import IconButton from "../buttons/icon-button";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Avatar } from "../avatar/avatar";
