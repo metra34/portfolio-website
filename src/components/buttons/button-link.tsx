@@ -1,18 +1,18 @@
 import React from 'react';
 
-type ButtonProps = {
+type ButtonLinkProps = React.HTMLProps<HTMLAnchorElement> & {
   className?: string;
-  href?: string;
 };
 
-const ButtonLink: React.FC<React.PropsWithChildren<ButtonProps>> = ({
+const ButtonLink: React.FC<React.PropsWithChildren<ButtonLinkProps>> = ({
   children,
   className,
-  href = '#'
+  href = '#',
+  target = '_blank'
 }) => {
   const clssName = `button-link ${className}`;
   return (
-    <a href={href} className={clssName}>
+    <a href={href} className={clssName} target={target}>
       {children}
     </a>
   );
