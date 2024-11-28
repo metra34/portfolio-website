@@ -1,7 +1,10 @@
+import ContactForm from '~/components/forms/contact-form';
+
 const HomePage = () => {
   return (
-    <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-      HELLO HomePage!
+    <div className="container mx-auto mt-12 w-min p-2">
+      <h2 className="w-full pb-2 text-4xl font-semibold">Contact Me</h2>
+      <ContactForm className="w-calc-90" />
     </div>
   );
 };

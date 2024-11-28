@@ -71,7 +71,7 @@
     min-height: 100lvh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    @apply bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white;
+    @apply bg-gradient-to-b from-[#2e026d] to-[#15162c] text-neutral-100;
   }
   * {
     min-width: 0;
@@ -180,5 +180,11 @@
       opacity: 1;
       transition-delay: 1000ms;
     }
+  }
+}
+
+@layer utils {
+  .w-calc-90 {
+    width: min(90lvw, 30rem);
   }
 }
