@@ -13,7 +13,7 @@ const config = {
   endOfLine: "lf",
   overrides: [
     {
-      files: "*.jsx",
+      files: "*.jsx, *.tsx",
       options: {},
     },
   ],

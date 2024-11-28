@@ -15,16 +15,16 @@ const AppNav = () => {
       /> */}
       {/* flex flex-wrap items-center justify-center  */}
       <div className="col-span-5 flex flex-wrap items-center justify-start gap-4 text-xl font-semibold md:col-span-4 md:col-start-2 md:justify-center">
-        <Link href="/">Experience</Link>
+        <Link href="/">Home</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/contact">Contact</Link>
       </div>
       <div className="col-span-1 flex items-center justify-end gap-2 text-xl">
         <IconLink href="https://github.com/metra34">
-          <FaGithub className="h-6 w-6 fill-pink-600 hover:fill-pink-50" />
+          <FaGithub className="size-6 fill-pink-600 hover:fill-pink-50" />
         </IconLink>
         <IconLink href="https://www.linkedin.com/in/artem-clement">
-          <FaLinkedin className="h-6 w-6 fill-pink-600 hover:fill-pink-50" />
+          <FaLinkedin className="size-6 fill-pink-600 hover:fill-pink-50" />
         </IconLink>
       </div>
     </nav>
