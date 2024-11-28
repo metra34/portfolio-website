@@ -7,7 +7,7 @@ export default function HomePage() {
 
   return (
     <div className="container mx-auto w-full">
-      <HoverCard title={title} imgSrc="/assets/images/fio.jpg">
+      <HoverCard title={title} imgSrc="/assets/images/fio.jpg" href="https://www.fio.com/">
         {description}
       </HoverCard>
     </div>

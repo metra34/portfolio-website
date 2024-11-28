@@ -1,17 +1,19 @@
 import React from 'react';
-import Button from '../buttons/button';
+import ButtonLink from '../buttons/button-link';
 
 type CardProps = {
   title: string;
   className?: string;
   imgSrc: string;
+  href?: string;
 };
 
 const HoverCard: React.FC<React.PropsWithChildren<CardProps>> = ({
   children,
   title,
   className,
-  imgSrc
+  imgSrc,
+  href = '#'
 }) => {
   const clssName = `card ${className}`;
   return (
@@ -19,9 +21,9 @@ const HoverCard: React.FC<React.PropsWithChildren<CardProps>> = ({
       <div className="card-content">
         <h2 className="card-title">{title}</h2>
         <p className="card-body">{children}</p>
-        <Button className="bg-red-800 hover:bg-red-900 focus:bg-red-950 focus:outline-none focus:ring active:bg-red-950">
+        <ButtonLink href={href} className="bg-red-800 hover:bg-red-900 focus:bg-red-950 focus:outline-none focus:ring active:bg-red-950">
           Learn More
-        </Button>
+        </ButtonLink>
       </div>
     </div>
   );
