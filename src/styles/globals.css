@@ -78,6 +78,20 @@
   }
 }
 
+@layer base {
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+      transition-delay: 0ms !important;
+    }
+  }
+}
+
 /* Hover Card */
 @layer components {
   :root {
@@ -90,7 +104,7 @@
     padding: 10rem 0 0;
     max-width: 35ch;
     @apply rounded-lg;
-
+    overflow: hidden;
     transition: transform 500ms ease;
   }
 
@@ -101,31 +115,7 @@
 
   .card-content {
     padding: var(--card-title-padding);
-    background: linear-gradient(hsl(0 0% 0% / 0.15), hsl(20 0% 0% / 0.7) 20%, hsl(0 0% 0% / 1));
-
-    transform: translateY(80%);
-    transition: transform 500ms ease;
-  }
-
-  .card:hover .card-content,
-  .card:focus-within .card-content {
-    transform: translateY(0);
-    transition-delay: 500ms;
-  }
-
-  .card:focus-within .card-content {
-    transition-duration: 0ms;
-  }
-
-  .card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 500ms linear;
-  }
-
-  .card:hover .card-content > *:not(.card-title),
-  .card:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 1000ms;
+    background: linear-gradient(hsl(0 0% 0% / 0.15), hsl(20 0% 0% / 0.6) 20%, hsl(0 0% 0% / 1));
   }
 
   .card-title {
@@ -162,5 +152,33 @@
 
   .card-body {
     @apply py-5;
+  }
+
+  @media (hover) {
+    .card-content {
+      transform: translateY(80%);
+      transition: transform 500ms ease;
+    }
+
+    .card:hover .card-content,
+    .card:focus-within .card-content {
+      transform: translateY(0);
+      transition-delay: 500ms;
+    }
+
+    .card:focus-within .card-content {
+      transition-duration: 0ms;
+    }
+
+    .card-content > *:not(.card-title) {
+      opacity: 0;
+      transition: opacity 500ms linear;
+    }
+
+    .card:hover .card-content > *:not(.card-title),
+    .card:focus-within .card-content > *:not(.card-title) {
+      opacity: 1;
+      transition-delay: 1000ms;
+    }
   }
 }
