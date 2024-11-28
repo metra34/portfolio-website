@@ -35,7 +35,7 @@ const UserInfoCard: React.FC<UserInfoCardProps> = ({
       </div>
       <h2 className="text-center text-xl font-semibold">{name}</h2>
       <h6 className="text-center text-neutral-400">{title}</h6>
-      <p className="pb-4 pt-2 px-4 text-center">{summary}</p>
+      <p className="pb-4 pt-2 md:px-4 text-center">{summary}</p>
       <div className="flex items-center justify-center gap-2">
         {/* TODO add location icon */}
         <FaLocationDot className="" />

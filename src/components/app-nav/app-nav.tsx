@@ -6,7 +6,7 @@ import IconLink from '../buttons/icon-link';
 
 const AppNav = () => {
   return (
-    <nav className="grid grid-cols-6 px-4 py-4">
+    <nav className="grid grid-cols-6 px-4 py-4 mb-4 bg-neutral-900">
       {/* <Avatar
         className="h-10 w-10"
         alt="Site Logo"

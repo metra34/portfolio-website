@@ -5,7 +5,8 @@ export default {
   content: ['./src/**/*.tsx'],
   theme: {
     container: {
-      center: true
+      center: true,
+      padding: '0.5rem'
     },
     extend: {
       fontFamily: {
