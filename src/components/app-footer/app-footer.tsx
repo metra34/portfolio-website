@@ -3,7 +3,7 @@ const AppFooter = () => {
     <footer className="py-4">
       <div className="container mx-auto text-center">
         <p className="text-sm select-none">
-          &copy; {new Date().getFullYear()} All rights reserved.
+          &copy; 2025 All rights reserved.
         </p>
       </div>
     </footer>
